@@ -1,0 +1,134 @@
+body{
+    background-image: url('images/1185466.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center center;
+}
+
+h1{
+    color: lightblue;
+    font-size: 50px;
+    -webkit-text-stroke: 2px black;
+    font-family: Verdana, sans-serif;
+}
+
+.container{
+    margin: auto;
+    margin-bottom: min(200 px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(48, 47, 47, 0.616);
+    border: 5px solid black;
+    border-radius: 25px;
+    max-width: 750px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.stars{
+    background-color: rgba(48, 47, 47, 0.616);
+    border: 2px solid black;
+    font-size:40px;
+    color:rgb(255, 0, 34);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.operators{
+    background-color: rgba(48, 47, 47, 0.616);
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    width: 110px;
+}
+
+.line{
+    margin-top: -3px;
+    border: 2px solid black;
+}
+
+.name{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+}
+
+.operators img{
+    width: 100%;
+}
+
+.operators:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+
+#long{
+    padding-top: 4px;
+    padding: auto;
+    font-size: 11px;
+    word-wrap: break-word;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup {
+    background-color: gray;
+    border: 10px solid black;
+    border-radius: 5%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 2fr 10px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-areas:
+        "image line text1 text2 text3"
+        "image line text4 text5 text6"
+        "image line text7 text8 text9"
+        "image line text10 text11 text12";
+}
+
+.vl{
+    border-left: 10px solid black;
+    height: 500px;
+    grid-column: span 3;
+    grid-area: line;
+}
+
+.pname{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    grid-area: text1;
+}
+
+.type{
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 10%;
+    width: 40%;
+    grid-area: text3;
+}
+
+.modal img{
+    width: 100%;
+    grid-column: span 3;
+    grid-area: image;
+}
